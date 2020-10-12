@@ -35,7 +35,7 @@ describe('API Client', () => {
         server.shutdown();
     });
 
-    it('should request a list of pizzas', async () => {
+    it('should return a list of pizzas', async () => {
         const expectedPizzas = server.schema.pizzas.all();
 
         const result = await findAllPizzas();
